@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        array and object in es6
+    </title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+    //ES5 method
+  var a={
+    name:'rohan',
+    dept:"ai and ds",
+    roll_no:69,
+    prn_no:416301
+  };
+  var name=a.name;
+  var dept=a.dept;
+  var roll=a.roll_no;
+  var prn_no=a.prn_no;
+  console.log(name);
+  console.log(dept);
+  console.log(roll);
+  console.log(prn_no);
+
+  //Es6 method for array declaration
+  var b={
+    name:'bablu',
+    dept:"micro",
+    roll:65,
+    collage:"university"
+  };
+  //Access the elements from array
+  console.log({name,dept,roll,collage}=b);
+</script>

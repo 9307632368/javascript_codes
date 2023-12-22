@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        number validation in js
+    </title>
+</head>
+<body>
+    <input type="text" onkeyup="val(this)" placeholder="Enter a number"/>
+    <div id="res"></div>
+</body>
+<script>
+    function val(elem){
+        if(isNaN(elem.value)){
+            document.getElementById("res").innerText="plese enter a number"
+        }
+        if(elem.value.length>10){
+            document.getElementById("res").innerText="type upto 10 numbers"
+
+        }
+    }
+</script>

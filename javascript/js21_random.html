@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+    <title>math random</title>
+</head>
+<body>
+    <button onclick="getotp()">otp</button>
+</body>
+<script type="text/javascript">
+    function getotp(){
+  var x=Math.random()*10000;
+  alert(x);
+  var opt=Math.floor(x);
+    document.write(opt);
+  }
+</script>

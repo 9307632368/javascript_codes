@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Dom method in js
+    </title>
+</head>
+<body>
+    <div id="main"> 
+        i dont want to go..
+    </div>
+    <div id="main1"> 
+        i will not do job forever..
+    </div>
+    <div class="row3">
+        hello everyone...
+    </div>
+    <div class="row3">
+        wtf.......
+    </div>
+</body>
+<script type="text/javascript">
+    var a=document.getElementById("main");
+    console.log(a);
+    var b=document.getElementById("main").innerHTML;
+    console.log(b);
+    document.getElementById("main1").innerHTML="<h1>rohan pol</h1>";
+    var d=document.getElementsByClassName("row3").innerHTML;
+    console.log(d);
+    var m=document.getElementsByClassName("row3")[1].innerHTML;
+    alert(m);
+</script>

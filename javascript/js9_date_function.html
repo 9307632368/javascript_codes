@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        date function
+    </title>
+</head>
+<body>
+    <h1 id="main"></h1> 
+
+<button onclick="getDate()">date</button>
+<button onclick="getyear()">year</button>
+<button onclick="getmonth()">month</button>
+<button onclick="gethour()">hour</button>
+<button onclick="getminute()">minute</button>
+<button onclick="getsec()">seconds</button>
+
+</body>
+<script type="text/javascript">
+    var dd=new Date();
+function getDate(){
+document.getElementById("main").innerText=dd;
+}
+function getyear(){
+    document.getElementById("main").innerText=dd.getFullYear();
+}
+function getmonth(){
+    document.getElementById("main").innerText=dd.getMonth();
+}
+function gethour(){
+    document.getElementById("main").innerText=dd.getHours();
+}
+function getminute(){
+    document.getElementById("main").innerText=dd.getMinutes();
+}
+function getsec(){
+    document.getElementById("main").innerText=dd.getSeconds();
+}
+</script>
+</html>

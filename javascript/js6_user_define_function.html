@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <title>user define function</title>
+</head>
+<style>
+    #main{
+        width: 500px;
+        height: 100px;
+        color: black;
+        background-color: chartreuse;
+        font-size: 50px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        box-shadow: 0px 0px 3px black;
+
+    }
+    #r1{
+        width: 200px;
+        height: 100px;
+        color: aliceblue;
+        background-color: aqua;
+        font-size: 50px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        box-shadow: 0px 0px 3px black;
+        margin: 50px;
+    }
+    .mm{
+        width: 10000px;
+        height: 100px;
+        color: black;
+        font-size: 50px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        box-shadow: 0px 0px 3px black;
+    }
+</style>
+<body>
+    <input type="text" name="name" id="main" placeholder="Enter your name"/>
+    <button onclick="greet()" id="r1" >wish</button>
+    <div class="mm"></div>
+</body>
+<script type="text/javascript">
+   function greet(){
+    var name=document.getElementById("main").value;
+    var x="Happy Birthday to you dear"+ " "+name;
+document.getElementsByClassName("mm")[0].innerHTML=x;
+   }
+</script>

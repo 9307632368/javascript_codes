@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        dom methods
+    </title>
+</head>
+<body>
+<input type="text" name="getname" >
+<button onclick="nm()">submit</button>
+<h1></h1>
+</body>
+<script type="text/javascript">
+     function nm(){
+       var name= document.getElementsByName("getname")[0];
+       console.log(name);
+       document.getElementsByTagName("h1")[0].innerHTML=name.values;
+     }
+</script>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        get attribute
+    </title>
+    <style>
+        .red{
+            width: 100px;
+            height: 100px;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div id="see" class="red"></div>
+    <button onclick="main()">click me</button>
+    <h1 id="mm"></h1>
+</body>
+<script type="text/javascript">
+    document.getElementById("see").innerHTML="rohan";
+    function main(){
+     var cls=   document.getElementById("see").getAttribute("class");
+        document.getElementById("mm").innerHTML=cls;
+    }
+</script>

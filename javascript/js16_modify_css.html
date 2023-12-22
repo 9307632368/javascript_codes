@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        modify css using javascript
+    </title>
+    <style>
+        #main{
+            width: 2000px;
+            height: 100px;
+            margin-left:  500px;
+            font-size: 80px;
+            margin-top: 100px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main" onmouseenter="modify()" onmouseleave="original()">
+        rohan pol
+    </div>
+</body>
+<script type="text/javascript">
+    function modify(){
+    document.getElementById("main").style.fontSize="200px";
+    }
+    function original(){
+    document.getElementById("main").style.fontSize="80px";
+    }
+</script>

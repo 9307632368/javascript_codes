@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        clear timout
+    </title>
+</head>
+<body>
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">stop</button>
+
+</body>
+<script type="text/javascript">
+    var my;
+    my=  setTimeout(
+        function start(){
+            document.write("rohan pol");
+        },5000
+      );
+      
+        function stop(){
+            clearTimeout(my);
+        }   
+</script>
